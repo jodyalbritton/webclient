@@ -46,7 +46,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(), // Tell webpack we want hot reloading
     new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({     // Create HTML file that includes references to bundled CSS and JS.
-      template: './index.html',
+      template: 'src/index.ejs',
       minify: {
         removeComments: true,
         collapseWhitespace: true

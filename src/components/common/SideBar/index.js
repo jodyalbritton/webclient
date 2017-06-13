@@ -14,29 +14,36 @@ class Sidebar extends React.Component {
           <div>
             <Drawer open={true} docked={true} className="app-drawer">
               <AppBar showMenuIconButton={false} />
-              <Link className="nav-link"
-                activeClassName="active"
-                to="/">
-                  Home
-              </Link>
+                <Link className="nav-link"
+                  to="/">
+                  <MenuItem>
+                    Home
+                  </MenuItem>
+                </Link>
 
-              <Link className="nav-link"
-                activeClassName="active"
-                to="/bots">
-                  Bots
-              </Link>
 
-              <Link className="nav-link"
-              activeClassName="active"
-              to="/accounts">
-                Accounts
-              </Link>
+                <Link className="nav-link"
+                  to="/bots">
+                  <MenuItem>
+                    Bots
+                  </MenuItem>
+                </Link>
 
-              <Link className="nav-link"
-              activeClassName="active"
-              to="/about">
-                About
-              </Link>
+
+                <Link className="nav-link"
+                to="/accounts">
+                <MenuItem>
+                  Accounts
+                </MenuItem>
+                </Link>
+
+
+                <Link className="nav-link"
+                to="/about">
+                <MenuItem>
+                  About
+                </MenuItem>
+                </Link>
 
             </Drawer>
           </div>
