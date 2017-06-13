@@ -5,9 +5,10 @@ import Theme                        from './muiTheme'
 import MuiThemeProvider             from 'material-ui/styles/MuiThemeProvider'
 import invariant                    from 'invariant'
 import configRoutes                 from '../routes'
+
 import createHistory from 'history/createBrowserHistory'
 
-
+import SideBar      from '../components/common/SideBar'
 
 const Root = ({ store }) => {
     const routerHistory = createHistory()
@@ -21,7 +22,12 @@ const Root = ({ store }) => {
       <Provider store={store}>
         <MuiThemeProvider muiTheme={Theme}>
           <ConnectedRouter history={routerHistory}>
-            {configRoutes(store)}
+            <div>
+              <SideBar />
+              <div className="main-content">
+              {configRoutes(store)}
+              </div>
+            </div>
           </ConnectedRouter>
         </MuiThemeProvider>
       </Provider>

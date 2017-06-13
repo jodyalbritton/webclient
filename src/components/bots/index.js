@@ -3,18 +3,17 @@
 import React                  from 'react'
 import { connect }            from 'react-redux'
 import { bindActionCreators } from 'redux'
-import Demo                   from './demo'
 import Header                 from '../common/AppBar'
 
 
 
-class DefaultDashboard extends React.Component {
+class BotsView extends React.Component {
     render() {
       return (
         <div>
-          <Header title="Searchlight" />
+          <Header title="Bots" />
           <div className="body-content">
-            <Demo example="XYZ"/>
+            Bots Page
           </div>
         </div>
       )
@@ -34,4 +33,4 @@ function mapDispatchToProps(dispatch: Object) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(DefaultDashboard)
+export default connect(mapStateToProps, mapDispatchToProps)(BotsView)
