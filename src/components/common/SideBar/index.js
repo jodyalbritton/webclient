@@ -17,33 +17,25 @@ class Sidebar extends React.Component {
               <Link className="nav-link"
                 activeClassName="active"
                 to="/">
-                <MenuItem onClick={console.log('clicked')}>
                   Home
-                </MenuItem>
               </Link>
 
               <Link className="nav-link"
                 activeClassName="active"
                 to="/bots">
-                <MenuItem onClick={console.log('clicked')}>
                   Bots
-                </MenuItem>
               </Link>
 
               <Link className="nav-link"
               activeClassName="active"
               to="/accounts">
-              <MenuItem onClick={console.log('clicked')}>
                 Accounts
-              </MenuItem>
               </Link>
 
               <Link className="nav-link"
               activeClassName="active"
               to="/about">
-              <MenuItem onClick={console.log('clicked')}>
                 About
-              </MenuItem>
               </Link>
 
             </Drawer>
